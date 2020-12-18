@@ -23,9 +23,7 @@ public class LoginPageStep {
 	
 	@Given("^User is on login page$")
 	public void user_is_on_login_page() {
-		//DriverFactory.getDriver().get("http://automationpractice.com/index.php?controller=authentication&back=my-account"); //URL
-		
-		DriverFactory.getDriver().get("https://www.google.com");
+		DriverFactory.getDriver().get("http://automationpractice.com/index.php?controller=authentication&back=my-account"); //URL
 	}
 
 	@When("user gets the title of the page")
