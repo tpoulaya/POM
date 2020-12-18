@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
  */
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "src/test/resources/AppFeatures" }, glue = { "stepDefinition", "AppHooks" }, plugin = {"pretty" }, publish = true)
+@CucumberOptions(features = { "src/test/resources/AppFeatures" }, glue = { "stepDefinition", "AppHooks" }, plugin = {"pretty" })
 
 public class MyTestRunner {
 
