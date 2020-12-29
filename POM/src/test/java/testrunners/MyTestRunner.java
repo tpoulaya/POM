@@ -14,7 +14,8 @@ import io.cucumber.junit.CucumberOptions;
  */
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "src/test/resources/AppFeatures" }, glue = { "stepDefinition", "AppHooks" }, plugin = {"pretty" })
+@CucumberOptions(features = { "src/test/resources/AppFeatures" }, glue = { "stepDefinition", "AppHooks" }, 
+plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","timeline:test-output-thread/" })
 
 public class MyTestRunner {
 
